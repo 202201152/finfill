@@ -30,25 +30,10 @@ export default function Dashboard() {
         <h1 className="text-3xl font-semibold text-gray-900 dark:text-gray-100 tracking-tight">Client Dashboard</h1>
         
         <div className="flex items-center gap-3">
-          <button className="w-10 h-10 rounded-full flex items-center justify-center text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-white dark:hover:bg-gray-800 transition-colors border border-transparent hover:border-gray-200 dark:hover:border-gray-700">
-            <Search size={18} />
-          </button>
-          <button className="w-10 h-10 rounded-lg bg-gray-100 dark:bg-[#1f2937] flex items-center justify-center text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
-            <LayoutGrid size={18} />
-          </button>
-          
           <div className="flex items-center bg-gray-50 dark:bg-[#1f2937] border border-gray-200 dark:border-gray-800 rounded-full px-4 py-2 text-sm font-medium text-gray-600 dark:text-gray-300">
             <Calendar size={16} className="mr-2 text-gray-400 dark:text-gray-500" />
             20-27 Jan, 2025
           </div>
-          
-          <Button variant="pill" className="px-5 shadow-md">
-            <Plus size={16} className="mr-1" /> Add Wallet
-          </Button>
-          
-          <button className="text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white ml-2 transition-colors">
-            Create a Report
-          </button>
         </div>
       </div>
 

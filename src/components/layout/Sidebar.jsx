@@ -3,10 +3,10 @@ import { LayoutDashboard, Receipt, LineChart, Settings } from 'lucide-react';
 import { cn } from '../../lib/utils';
 
 const navItems = [
-  { icon: LayoutDashboard, path: '/' },
-  { icon: Receipt, path: '/transactions' },
-  { icon: LineChart, path: '/insights' },
-  { icon: Settings, path: '/settings' },
+  { icon: LayoutDashboard, path: '/dashboard' },
+  { icon: Receipt, path: '/dashboard/transactions' },
+  { icon: LineChart, path: '/dashboard/insights' },
+  { icon: Settings, path: '/dashboard/settings' },
 ];
 
 export default function Sidebar() {

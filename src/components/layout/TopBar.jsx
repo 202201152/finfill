@@ -62,12 +62,6 @@ export default function TopBar() {
           >
             {theme === 'dark' ? <Sun size={20} strokeWidth={2} /> : <Moon size={20} strokeWidth={2} />}
           </button>
-          <button className="text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors">
-            <Bell size={20} strokeWidth={2} />
-          </button>
-          <button className="text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors">
-            <Search size={20} strokeWidth={2} />
-          </button>
           <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#FF7A7A] to-[#FFB75E] shadow-sm ml-2"></div>
         </div>
       </div>
