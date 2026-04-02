@@ -19,25 +19,20 @@ export default function TopBar() {
 
   return (
     <header className="h-20 flex items-center justify-between px-4 md:px-8 bg-transparent shrink-0">
-      <div className="flex items-center gap-2 text-sm text-[var(--color-text-secondary)]">
-        <span>Home Page</span>
-        <span>/</span>
-        <span className="font-semibold text-gray-900 dark:text-gray-100">{getBreadcrumb()}</span>
+      <div className="flex items-center gap-3 text-[#7DAF72] dark:text-[#91C388]">
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="mt-0.5">
+          {/* F Shape */}
+          <path d="M10 4H28V8.5H13L10.5 16H22V20.5H9L6 28H1.5L10 4Z" fill="currentColor" />
+          {/* Chart Bars */}
+          <rect x="12" y="23" width="3.5" height="5" fill="currentColor" />
+          <rect x="18" y="18" width="3.5" height="10" fill="currentColor" />
+          <rect x="24" y="13" width="3.5" height="15" fill="currentColor" />
+        </svg>
+        <span className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">FinFlow</span>
       </div>
 
       <div className="flex items-center gap-4 md:gap-6">
-        {/* Avatars & Add Manager */}
-        <div className="hidden lg:flex items-center pr-4">
-          <div className="flex -space-x-2 mr-4">
-            <div className="w-8 h-8 rounded-full border-2 border-white bg-[#4DA1FF] z-30"></div>
-            <div className="w-8 h-8 rounded-full border-2 border-white bg-[#FF6EC7] z-20"></div>
-            <div className="w-8 h-8 rounded-full border-2 border-white bg-[#A763FF] z-10"></div>
-            <div className="w-8 h-8 rounded-full border-2 border-white bg-gray-900 text-white flex items-center justify-center text-[10px] font-medium z-0">+3</div>
-          </div>
-          <button className="flex items-center text-sm font-medium text-gray-600 border border-gray-200 rounded-full px-4 py-1.5 hover:bg-gray-50 transition-colors">
-            <span className="text-gray-400 font-bold mr-2">+</span> Add Manager
-          </button>
-        </div>
+
 
         {/* Role Switcher Pill */}
         <button

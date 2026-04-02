@@ -9,9 +9,9 @@ export default function InsightsSummaryCard() {
           <Lightbulb size={18} />
         </div>
         <div>
-          <h4 className="font-semibold text-gray-900 mb-1">Smart Insight</h4>
+          <h4 className="font-semibold text-gray-900 dark:text-white dark:font-bold mb-1">Smart Insight</h4>
           <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">
-            Your food expenses are <strong className="text-gray-900 font-medium">18% higher</strong> this month. Consider cutting back on dining out to stay within your $500 monthly budget goal.
+            Your food expenses are <strong className="text-gray-900 dark:text-white font-medium dark:font-bold">18% higher</strong> this month. Consider cutting back on dining out to stay within your $500 monthly budget goal.
           </p>
         </div>
       </div>

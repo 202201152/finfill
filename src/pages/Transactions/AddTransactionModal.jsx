@@ -46,7 +46,7 @@ export default function AddTransactionModal({ isOpen, onClose }) {
             <input 
               required
               type="text" 
-              className="w-full border border-gray-200 rounded-xl px-4 py-2.5 focus:ring-2 focus:ring-[var(--color-sage)] outline-none"
+              className="w-full border border-gray-200 rounded-xl px-4 py-2.5 focus:ring-2 focus:ring-[var(--color-sage)] outline-none text-gray-900 dark:text-gray-900 bg-white dark:bg-white"
               value={formData.merchant}
               onChange={e => setFormData({...formData, merchant: e.target.value})}
             />
@@ -59,7 +59,7 @@ export default function AddTransactionModal({ isOpen, onClose }) {
                 required
                 type="number" 
                 step="0.01"
-                className="w-full border border-gray-200 rounded-xl px-4 py-2.5 focus:ring-2 focus:ring-[var(--color-sage)] outline-none"
+                className="w-full border border-gray-200 rounded-xl px-4 py-2.5 focus:ring-2 focus:ring-[var(--color-sage)] outline-none text-gray-900 dark:text-gray-900 bg-white dark:bg-white"
                 value={formData.amount}
                 onChange={e => setFormData({...formData, amount: e.target.value})}
               />
@@ -69,7 +69,7 @@ export default function AddTransactionModal({ isOpen, onClose }) {
               <input 
                 required
                 type="date"
-                className="w-full border border-gray-200 rounded-xl px-4 py-2.5 focus:ring-2 focus:ring-[var(--color-sage)] outline-none"
+                className="w-full border border-gray-200 rounded-xl px-4 py-2.5 focus:ring-2 focus:ring-[var(--color-sage)] outline-none text-gray-900 dark:text-gray-900 bg-white dark:bg-white"
                 value={formData.date}
                 onChange={e => setFormData({...formData, date: e.target.value})}
               />
@@ -80,7 +80,7 @@ export default function AddTransactionModal({ isOpen, onClose }) {
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">Category</label>
               <select 
-                className="w-full border border-gray-200 rounded-xl px-4 py-2.5 focus:ring-2 focus:ring-[var(--color-sage)] outline-none bg-white"
+                className="w-full border border-gray-200 rounded-xl px-4 py-2.5 focus:ring-2 focus:ring-[var(--color-sage)] outline-none bg-white dark:bg-white text-gray-900 dark:text-gray-900"
                 value={formData.category}
                 onChange={e => setFormData({...formData, category: e.target.value})}
               >
@@ -90,7 +90,7 @@ export default function AddTransactionModal({ isOpen, onClose }) {
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">Type</label>
               <select 
-                className="w-full border border-gray-200 rounded-xl px-4 py-2.5 focus:ring-2 focus:ring-[var(--color-sage)] outline-none bg-white"
+                className="w-full border border-gray-200 rounded-xl px-4 py-2.5 focus:ring-2 focus:ring-[var(--color-sage)] outline-none bg-white dark:bg-white text-gray-900 dark:text-gray-900"
                 value={formData.type}
                 onChange={e => setFormData({...formData, type: e.target.value})}
               >
