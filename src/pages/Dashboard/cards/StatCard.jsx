@@ -31,7 +31,7 @@ export default function StatCard({ title, amount, subtitle, trend, type }) {
       <div>
         <div className={cn(
           "text-3xl font-bold tracking-tight mb-1",
-          type === 'income' ? 'text-green-500' : type === 'expense' ? 'text-red-400' : 'text-gray-900'
+          type === 'income' ? 'text-green-500' : type === 'expense' ? 'text-red-400' : 'text-gray-900 dark:text-gray-100'
         )}>
           {amount}
         </div>

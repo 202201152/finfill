@@ -29,8 +29,8 @@ export default function TransactionTable() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
           </svg>
         </div>
-        <h3 className="text-lg font-medium text-gray-900 mb-1">No transactions found</h3>
-        <p className="text-gray-500 text-sm">Try adjusting your filters or search query.</p>
+        <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100 mb-1">No transactions found</h3>
+        <p className="text-gray-500 dark:text-gray-400 text-sm">Try adjusting your filters or search query.</p>
       </div>
     );
   }
@@ -51,14 +51,14 @@ export default function TransactionTable() {
           <tbody className="text-sm">
             {filteredTransactions.map(tx => (
               <tr key={tx.id} className="border-b border-gray-50 hover:bg-gray-50/50 transition-colors group">
-                <td className="py-4 px-6 font-medium text-gray-900">{tx.merchant}</td>
-                <td className="py-4 px-6 text-gray-500">{format(new Date(tx.date), 'MMM dd, yyyy')}</td>
+                <td className="py-4 px-6 font-medium text-gray-900 dark:text-gray-100">{tx.merchant}</td>
+                <td className="py-4 px-6 text-gray-500 dark:text-gray-400">{format(new Date(tx.date), 'MMM dd, yyyy')}</td>
                 <td className="py-4 px-6">
                   <Badge variant="outline">{tx.category}</Badge>
                 </td>
                 <td className={cn(
                   "py-4 px-6 text-right font-medium",
-                  tx.type === 'income' ? 'text-[var(--color-income)]' : 'text-gray-900'
+                  tx.type === 'income' ? 'text-[var(--color-income)]' : 'text-gray-900 dark:text-gray-100'
                 )}>
                   {tx.type === 'income' ? '+' : '-'}${Math.abs(tx.amount).toFixed(2)}
                 </td>

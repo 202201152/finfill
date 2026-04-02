@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:is(.dark *));
 
 @theme {
   --color-sage: #7DAF72;
@@ -24,5 +25,15 @@
     color: var(--color-text-primary);
     font-family: var(--font-inter);
     -webkit-font-smoothing: antialiased;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .dark {
+    --color-page: #0f1115;
+    --color-text-primary: #f9fafb;
+    --color-text-secondary: #9ca3af;
+    --color-text-tertiary: #6b7280;
+    --color-border-color: #27272a;
+    color-scheme: dark;
   }
 }

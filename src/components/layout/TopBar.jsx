@@ -1,11 +1,12 @@
-import { Bell, Search } from 'lucide-react';
+import { Bell, Search, Sun, Moon } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
-import { useRoleStore } from '../../store/useStore';
+import { useRoleStore, useThemeStore } from '../../store/useStore';
 import { cn } from '../../lib/utils';
 
 export default function TopBar() {
   const location = useLocation();
   const { role, toggleRole } = useRoleStore();
+  const { theme, toggleTheme } = useThemeStore();
 
   const getBreadcrumb = () => {
     switch (location.pathname) {
@@ -60,6 +61,12 @@ export default function TopBar() {
         </button>
 
         <div className="flex items-center gap-4">
+          <button 
+            onClick={toggleTheme}
+            className="text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors"
+          >
+            {theme === 'dark' ? <Sun size={20} strokeWidth={2} /> : <Moon size={20} strokeWidth={2} />}
+          </button>
           <button className="text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors">
             <Bell size={20} strokeWidth={2} />
           </button>

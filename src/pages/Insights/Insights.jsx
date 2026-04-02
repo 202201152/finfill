@@ -3,12 +3,23 @@ import CategoryProgressBars from './CategoryProgressBars';
 import InsightsSummaryCard from './InsightsSummaryCard';
 import { Card } from '../../components/ui/Card';
 import { ArrowUpRight, ArrowDownRight } from 'lucide-react';
+import { motion } from 'framer-motion';
+
+const pageVariants = {
+  hidden: { opacity: 0, scale: 0.98 },
+  show: { opacity: 1, scale: 1, transition: { duration: 0.4 } }
+};
 
 export default function Insights() {
   return (
-    <div className="pb-20 xl:pb-0  animate-in fade-in duration-500">
-      <div className="mb-6">
-        <h2 className="text-2xl font-bold text-gray-900 tracking-tight">Financial Insights</h2>
+    <motion.div 
+      variants={pageVariants}
+      initial="hidden"
+      animate="show"
+      className="pb-24 xl:pb-12 animate-in fade-in duration-500"
+    >
+      <div className="mb-8">
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 tracking-tight">Financial Insights</h2>
         <p className="text-[var(--color-text-secondary)] text-sm mt-1">Analytics and summaries of your spending habits.</p>
       </div>
 
@@ -29,7 +40,7 @@ export default function Insights() {
           <CategoryProgressBars />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

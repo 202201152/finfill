@@ -32,8 +32,8 @@ export default function FeaturePromoCard() {
 
       {/* Details */}
       <div className="flex-1 flex flex-col">
-        <h3 className="font-bold text-gray-900 text-base mb-1">Advantages</h3>
-        <p className="text-[13px] text-gray-500 mb-1">Your earnings with the pro version</p>
+        <h3 className="font-bold text-gray-900 dark:text-gray-100 text-base mb-1">Advantages</h3>
+        <p className="text-[13px] text-gray-500 dark:text-gray-400 mb-1">Your earnings with the pro version</p>
         
         {/* Subtle Sparkline */}
         <div className="w-full h-10 mb-4 -ml-2 shrink-0">
@@ -48,7 +48,7 @@ export default function FeaturePromoCard() {
         <div className="flex justify-between items-center mb-6 mt-auto">
           <div className="flex items-center gap-2">
             <span className="w-2.5 h-2.5 rounded-full bg-[#F0F566] drop-shadow-sm"></span>
-            <span className="text-[13px] text-gray-500 font-medium">15 Days</span>
+            <span className="text-[13px] text-gray-500 dark:text-gray-400 font-medium">15 Days</span>
           </div>
           <button className="w-10 h-10 rounded-full bg-[#1A1A1A] flex items-center justify-center text-white hover:bg-black transition-colors shadow-xl">
             <ChevronRight size={18} />
@@ -56,7 +56,7 @@ export default function FeaturePromoCard() {
         </div>
         
         {/* Bottom Text */}
-        <p className="text-center text-xs text-gray-500 font-medium w-full relative -bottom-1">
+        <p className="text-center text-xs text-gray-500 dark:text-gray-400 font-medium w-full relative -bottom-1">
           Join the elite of the crypto world with Pro Version
         </p>
       </div>
