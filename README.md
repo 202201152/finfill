@@ -1,16 +1,44 @@
-# React + Vite
+# FinFlow - Finance Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FinFlow is a modern, responsive, and visually appealing personal finance dashboard. It empowers users to track their spending, analyze financial insights, and manage their transactions seamlessly. 
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Dynamic Dashboard:** A high-level overview of total balance, income, expenses, and savings with visually rich charts.
+- **Transaction Management:** Add, filter, and view financial transactions with dedicated views and interactive capabilities.
+- **Insights & Analytics:** Dive deep into spending patterns using beautiful, responsive graphs powered by Recharts.
+- **Modern UI/UX:** Built with a user-first approach featuring glassmorphism elements, dark mode consistency, and smooth micro-animations.
+- **Responsive Design:** Completely fluid and adaptable layout that works flawlessly on desktop, tablet, and mobile devices.
 
-## React Compiler
+## 🛠️ Technology Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework:** React 19 + Vite (Fast rendering and instant HMR)
+- **Styling:** Tailwind CSS 4.0 (Utility-first CSS framework for rapid and highly customizable UI development)
+- **State Management:** Zustand (A small, fast, and scalable bearbones state management solution)
+- **Data Visualization:** Recharts (A composable charting library built on React components)
+- **Icons:** Lucide React (Beautiful and consistent icon set)
+- **Date Utility:** date-fns (Comprehensive, yet simple and consistent toolset for manipulating JavaScript dates in a browser & Node.js)
 
-## Expanding the ESLint configuration
+## 📦 Installation & Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Clone the repository** Keep your terminal pointed to the root of the cloned directory.
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+4. **Open in Browser:** Navigate to `http://localhost:5173` (or the port provided by Vite).
+
+## 🗂️ Project Structure
+
+- `/src/components` - Reusable UI components (buttons, modals, layout elements).
+- `/src/pages` - Main route views (Dashboard, Transactions, Insights).
+- `/src/lib` - Utility functions and helpers.
+- `/src/store` - Zustand stores for global application state.
+
+## 🎨 Design Philosophy
+
+FinFlow prioritizes visual excellence. We use rich, harmonious color palettes, sophisticated typography (Inter/Outfit), and subtle animations to ensure the interface isn't just functional, but a joy to use. The dark mode is carefully contrasted to reduce eye strain while maintaining premium aesthetic standards.
