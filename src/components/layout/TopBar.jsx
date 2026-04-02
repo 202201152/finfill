@@ -22,7 +22,7 @@ export default function TopBar() {
       <div className="flex items-center gap-2 text-sm text-[var(--color-text-secondary)]">
         <span>Home Page</span>
         <span>/</span>
-        <span className="font-semibold text-gray-900">{getBreadcrumb()}</span>
+        <span className="font-semibold text-gray-900 dark:text-gray-100">{getBreadcrumb()}</span>
       </div>
 
       <div className="flex items-center gap-4 md:gap-6">

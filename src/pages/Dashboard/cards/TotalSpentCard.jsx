@@ -16,13 +16,13 @@ export default function TotalSpentCard() {
     <Card className="p-6 h-full min-h-[220px] flex flex-col">
       <div className="flex justify-between items-start mb-2">
         <h3 className="text-[var(--color-text-secondary)] font-medium text-sm">Total Spent</h3>
-        <span className="text-xs font-semibold px-2 py-1 bg-gray-100 rounded-md">Last 7 days</span>
+        <span className="text-xs font-semibold px-2 py-1 bg-gray-100 dark:bg-[#0f1115] text-gray-600 dark:text-gray-300 rounded-md">Last 7 days</span>
       </div>
       
       <div className="text-2xl font-bold mb-1">$820.65</div>
       <div className="text-xs text-[var(--color-text-tertiary)] flex items-center gap-2 mb-4">
         <span>10 Wallets</span>
-        <span className="w-1 h-1 rounded-full bg-gray-300"></span>
+        <span className="w-1 h-1 rounded-full bg-gray-300 dark:bg-gray-600"></span>
         <span>26 Assets</span>
       </div>
       

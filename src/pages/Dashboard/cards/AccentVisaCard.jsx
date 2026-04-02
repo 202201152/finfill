@@ -3,7 +3,7 @@ import { ChevronRight } from 'lucide-react';
 
 export default function AccentVisaCard() {
   return (
-    <Card className="bg-[var(--color-sage-accent)] p-6 h-full min-h-[260px] flex flex-col justify-between text-gray-900 border-none relative overflow-hidden">
+    <Card className="bg-[var(--color-sage-accent)] dark:bg-[var(--color-sage-accent)] p-6 h-full min-h-[260px] flex flex-col justify-between text-gray-900 dark:text-gray-900 border-none relative overflow-hidden">
       <div className="flex justify-between items-start">
         <div className="font-bold text-2xl tracking-tighter">VISA</div>
         <button className="w-6 h-6 flex items-center justify-center text-gray-900">

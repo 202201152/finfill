@@ -5,9 +5,9 @@ export function Button({ className, variant = 'primary', size = 'default', child
   
   const variants = {
     primary: "bg-[var(--color-sage)] hover:bg-[#6c9962] text-white rounded-xl",
-    pill: "bg-[var(--color-text-primary)] hover:bg-black text-white rounded-full",
-    outline: "border border-[var(--color-border-color)] bg-white hover:bg-gray-50 text-[var(--color-text-primary)] rounded-xl",
-    ghost: "bg-transparent hover:bg-gray-100 text-[var(--color-text-secondary)] rounded-xl",
+    pill: "bg-[var(--color-text-primary)] hover:bg-black dark:hover:bg-gray-200 text-white dark:text-gray-900 rounded-full",
+    outline: "border border-[var(--color-border-color)] bg-white dark:bg-[#1f2937] hover:bg-gray-50 dark:hover:bg-gray-800 text-[var(--color-text-primary)] rounded-xl",
+    ghost: "bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 text-[var(--color-text-secondary)] rounded-xl",
   };
   
   const sizes = {
